@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Insetos</title>
+    <title>Resultados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .result-info {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Resultado do Controle de Insetos</h1>
-
-    <p>{{ resultado }}</p>
-
-    {% if controles %}
-    <h2>Controles Recomendados:</h2>
-    <ul>
-        <li>Controle Químico: {{ controles['Controle Químico'] }}</li>
-        <li>Controle Biológico: {{ controles['Controle Biológico'] }}</li>
-        <li>Controle Cultural: {{ controles['Controle Cultural'] }}</li>
-    </ul>
-    {% endif %}
-
-    <a href="{{ url_for('index') }}">Voltar</a>
+    <h1>Resultados</h1>
+    <div class="result-info">
+        <p>{{ resultado.mensagem }}</p>
+        {% if resultado.controle_biologico %}
+            <p><strong>Controle Biológico:</strong> {{ resultado.controle_biologico }}</p>
+        {% endif %}
+        {% if resultado.controle_cultural %}
+            <p><strong>Controle Cultural:</strong> {{ resultado.controle_cultural }}</p>
+        {% endif %}
+        {% if resultado.link %}
+            <p><strong>Link para mais informações e recomendações de controle químico:</strong> <a href="{{ resultado.link }}" target="_blank">{{ resultado.link }}</a></p>
+        {% endif %}
+        {% if resultado.nivel_controle %}
+            <p><strong>Nível de Controle:</strong> {{ resultado.nivel_controle }}%</p>
+        {% endif %}
+        {% if resultado.beneficios %}
+            <p><strong>Benefícios:</strong> {{ resultado.beneficios }}</p>
+        {% endif %}
+    </div>
 </body>
 </html>

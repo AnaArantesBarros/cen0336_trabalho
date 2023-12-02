@@ -8,6 +8,43 @@
         body {
             text-align: center; /* Centraliza o texto na página */
             padding-top: 50px; /* Adiciona espaço para o banner na parte superior */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 300px; /* Ajusta a largura máxima do formulário */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -17,13 +54,22 @@
         <!-- Conteúdo do banner -->
     </div>
 
-    <h1>Controle de Pragas</h1>
-    <form method="post" action="/">
+    <h1>Easy.Pragas</h1>
+    <form method="post" action="/result">
         <label for="input_nome">Nome Científico do Inseto:</label>
         <select name="input_nome" id="input_nome" required>
-            <option value="Atta capiguara">Atta capiguara</option>
-            <option value="Bolax flavolineatus">Bolax flavolineatus</option>
-            <option value="Castnia licus">Castnia licus</option>
+            <option value="Diatraea saccharalis">Diatraea saccharalis</option>
+            <option value="Sphenophorus levis">Sphenophorus levis</option>
+            <option value="Heterotermes tenuis">Heterotermes tenuis</option>
+            <option value="Procornitermes triacifer">Procornitermes triacifer</option>
+            <option value="Mahanarva fimbriolata">Mahanarva fimbriolata</option>
+            <option value="Mahanarva posticata">Mahanarva posticata</option>
+            <option value="Migdolus fryanus">Migdolus fryanus</option>
+            <option value="Cotesia flavipes">Cotesia flavipes</option>
+            <option value="Trichogramma galoi">Trichogramma galoi</option>
+            <option value="Tesourinha">Tesourinha</option>
+            <option value="Crisopídeo">Crisopídeo</option>
+            <option value="Joaninha">Joaninha</option>
             <!-- Adicione mais opções conforme necessário -->
         </select>
         <br>

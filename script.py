@@ -37,7 +37,7 @@ insetos_cana_de_acucar = [
         'Link': 'https://agrofit.agricultura.gov.br/agrofit_cons/!ap_praga_detalhe_cons?p_id_cultura_praga=2815'
     },
     {
-        'Nome Científico': 'Cupim Proconitermes',
+        'Nome Científico': 'Procornitermes triacifer',
         'Nome Comum': 'Cupim Proconitermes',
         'É Praga?': True,
         'C': 27,
@@ -48,8 +48,8 @@ insetos_cana_de_acucar = [
         'Link': 'https://agrofit.agricultura.gov.br/agrofit_cons/!ap_praga_detalhe_cons?p_id_cultura_praga=2826'
     },
     {
-        'Nome Científico': 'Cigarrinha (Mahanarva fimbriolata)',
-        'Nome Comum': 'Cigarrinha (Mahanarva fimbriolata)',
+        'Nome Científico': 'Mahanarva fimbriolata',
+        'Nome Comum': 'Cigarrinha',
         'É Praga?': True,
         'C': 10,
         'DE': 17,
@@ -59,8 +59,8 @@ insetos_cana_de_acucar = [
         'Link': 'https://agrofit.agricultura.gov.br/agrofit_cons/!ap_praga_detalhe_cons?p_id_cultura_praga=2816'
     },
     {
-        'Nome Científico': 'Cigarrinha (Mahanarva posticata)',
-        'Nome Comum': 'Cigarrinha (Mahanarva posticata)',
+        'Nome Científico': 'Mahanarva posticata',
+        'Nome Comum': 'Cigarrinha',
         'É Praga?': True,
         'C': 12,
         'DE': 20,
@@ -70,7 +70,7 @@ insetos_cana_de_acucar = [
         'Link': 'https://agrofit.agricultura.gov.br/agrofit_cons/!ap_praga_detalhe_cons?p_id_cultura_praga=2817'
     },
     {
-        'Nome Científico': 'Migdolus',
+        'Nome Científico': 'Migdolus fryanus',
         'Nome Comum': 'Migdolus',
         'É Praga?': True,
         'C': 20,
